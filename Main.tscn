@@ -1,0 +1,11 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://LevelGenerator.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Floor.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Wall.tscn" type="PackedScene" id=3]
+
+[node name="Main" type="Node2D"]
+
+[node name="LevelGenerator" parent="." instance=ExtResource( 1 )]
+floorObj = ExtResource( 2 )
+wallObj = ExtResource( 3 )
