@@ -4,3 +4,4 @@
 
 [node name="LevelGenerator" type="Node"]
 script = ExtResource( 1 )
+targetGridFillPercent = 0.2

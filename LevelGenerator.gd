@@ -107,8 +107,8 @@ func createFloors():
 			walkers[i].pos += walkers[i].dir
 			walkers[i].pos.x = clamp(walkers[i].pos.x, 1, levelWidth - 2)
 			walkers[i].pos.y = clamp(walkers[i].pos.y, 1, levelHeight - 2)
-			
-		if (floorCount / levelArea >= targetGridFillPercent):
+		
+		if (float(floorCount) / float(levelArea) >= targetGridFillPercent):
 			break;
 				
 		iter += 1
